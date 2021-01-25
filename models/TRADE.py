@@ -264,7 +264,7 @@ class TRADE(nn.Module):
         ACC = len(slot_temp) - miss_gold - wrong_pred
         ACC = ACC / float(ACC_TOTAL)
         return ACC
-
+    
     def compute_prf(self, gold, pred):
         TP, FP, FN = 0, 0, 0
         if len(gold)!= 0:
